@@ -1,0 +1,15 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "commonjs",
+    "sourceMap": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "declaration": true
+  },
+  "files": [
+    "Sources/App.ts",
+    "Tests/Tests.ts",
+    "typings/tsd.d.ts"
+  ]
+}
