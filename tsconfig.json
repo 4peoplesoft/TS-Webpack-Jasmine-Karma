@@ -1,15 +1,13 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "module": "commonjs",
     "sourceMap": true,
-    "target": "es6",
-    "moduleResolution": "node",
-    "declaration": true
+    "target": "es6"
   },
+  "exclude": [
+    "./node_modules/"
+  ],
   "files": [
-    "Sources/App.ts",
-    "Tests/Tests.ts",
-    "typings/tsd.d.ts"
+    "./Sources/App.ts"
   ]
 }

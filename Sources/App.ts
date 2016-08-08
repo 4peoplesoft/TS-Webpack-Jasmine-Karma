@@ -1,3 +1,4 @@
+/// <reference path="../typings/tsd.d.ts" />
 import * as $ from "jquery";
 import { Greeter } from './Greeter';
 import { Tester } from "./Tester";
@@ -9,7 +10,6 @@ $(() =>
   
   new Tester().AsyncMethod().then(() =>
   {
-    console.log(3);
     $(document.body).html(new Greeter("123").Name);
   });
 });

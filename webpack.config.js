@@ -1,16 +1,20 @@
-module.exports = {
+"use strict"
+const webpack = require("webpack");
+
+//let production = true;
+
+const configs = {
     entry: {
-        Library: './Sources/App.ts',
-        // Tests: ['./Tests/Tests.ts', "./Sources/App.ts"]
+        App: "./Sources/App.ts",
     },
     output: {
-        filename: '[name].js',
+        filename: "[name].js",
         path: __dirname + "/Build/",
-        library: "lib"
+        library: "app"
     },
-    devtool: 'source-map',
+    devtool: "source-map",
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+        extensions: ["", ".webpack.js", ".web.js", ".ts", ".js"]
     },
     module: {
         loaders: [
@@ -21,3 +25,13 @@ module.exports = {
         ]
     }
 }
+//Minify or not
+if ("undefined" != typeof (production) && production) {
+    configs.plugins.push(new webpack.optimize.UglifyJsPlugin({
+        compress: {
+            warnings: false
+        }
+    }));
+}
+
+module.exports = configs;
