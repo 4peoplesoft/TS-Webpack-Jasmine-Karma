@@ -1,9 +1,4 @@
-import {Tester} from "./Tester";
 
-export default function greet(name: string)
-{
-    return 'Hello ' + name;
-}
 export class Greeter
 {
     private _name: string;

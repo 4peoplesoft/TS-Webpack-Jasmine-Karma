@@ -1,7 +1,16 @@
 {
-  "name": "ts-webpack",
+  "name": "jasmine-karma-ts-webpack",
   "dependencies": {
-    "jquery": "^2.2.4"
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "jquery": "^2.2.4",
+    "karma": "^1.2.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-webpack": "^1.8.0",
+    "recursive-readdir": "^2.0.0",
+    "sequence": "^3.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.13.2",

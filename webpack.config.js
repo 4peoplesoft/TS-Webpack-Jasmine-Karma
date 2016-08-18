@@ -6,6 +6,7 @@ const webpack = require("webpack");
 const configs = {
     entry: {
         App: "./Sources/App.ts",
+        Tests: "./Tests/Tests.ts",
     },
     output: {
         filename: "[name].js",

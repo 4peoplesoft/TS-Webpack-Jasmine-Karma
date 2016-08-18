@@ -1,15 +1,19 @@
-# Typescript + Webpack build
+# Jasmine + Karma + Typescript + Webpack
 
-This build typescript with webpack and process code for browser. Build next tools to one pack.
+This build typescript by webpack and setup testing with Jasmine and Karma via typescript. This rep is example how build this tools to one system.
 
   - TypeScript
   - Webpack
+  - Jasmine
+  - Karma
   - Babel
   - async/await
   - sourcemap
+  - Multi-browsers
 
-[Full docs (on Russian)](https://4peoplesoft.atlassian.net/wiki/pages/viewpage.action?pageId=14450757) about setup this tools to clean project
+[Full docs (on Russian)](https://4peoplesoft.atlassian.net/wiki/pages/viewpage.action?pageId=12025861) about setup this tools to clean project
 
 TODO:
-  - Generate *d.ts
-
+  - Create index.html for launch tests with Jasmine
+  - Code coverage
+  - TDD mode
