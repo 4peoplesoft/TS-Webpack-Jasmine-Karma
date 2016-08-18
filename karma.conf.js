@@ -4,7 +4,6 @@ const webpack = require("./webpack.config.js");
 module.exports = function(config) {
     config.set({
         browsers: ["PhantomJS", "Chrome"],
-        // basePath: __dirname,
         frameworks: ["jasmine"],
         files: [
             "./Tests/Tests.ts"
